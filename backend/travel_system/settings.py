@@ -3,7 +3,8 @@ import os
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'change-me'
 DEBUG = True
-ALLOWED_HOSTS = ['travel-booking-system-fixed.onrender.com', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['travel-booking-system-fixed.onrender.com', '127.0.0.1', 'localhost']
+
 
 
 INSTALLED_APPS = [
