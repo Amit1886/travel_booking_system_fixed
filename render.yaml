@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: travel-booking-system
+    env: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: cd backend && gunicorn travel_system.wsgi:application
+    envVars:
+      - key: DJANGO_SETTINGS_MODULE
+        value: travel_system.settings
+      - key: PYTHON_VERSION
+        value: 3.10
