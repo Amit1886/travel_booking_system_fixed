@@ -1,5 +1,8 @@
-
+# travel_system/apps/accounts/urls.py
 from django.urls import path
+from . import views
+
 urlpatterns = [
-    # auth views here
+    path('', views.home, name='home'),  # <-- add this
+    # other URLs...
 ]
